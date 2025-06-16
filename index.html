@@ -1,11 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oasis Weber IOT</title>
+  <link rel="stylesheet" href="index.css" />
 </head>
 <body>
-    
+  <div class="container">
+    <nav class="navbar">
+      <div class="nav-content">
+        <img src="logo2.png" alt="Logo" class="logo" />
+        <div class="menu">
+          <a href="#home"><button>Home</button></a>
+          <a href="#servicos"><button>Serviços</button></a>
+          <a href="#cadastro"><button>IOT Cadastro</button></a>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <section id="home" class="section">
+    <h1 class="title">Oasis Weber IOT</h1>
+    <p class="description">
+      A Oasis Weber oferece soluções de automação com IoT para residências e indústrias.
+      Tecnologias modernas para controle, eficiência e conectividade.
+    </p>
+    <div class="image-grid">
+      <img src="principal.png" alt="Imagem 1">
+    </div>
+  </section>
+
+  <section id="servicos" class="section">
+    <h2 class="title">Automação industrial personalizada</h2>
+    <p class="description">
+      Desenvolvemos soluções sob medida com sensores inteligentes, CLPs e sistemas
+      de monitoramento. Nossas soluções aumentam a eficiência e reduzem custos de produção.
+    </p>
+  </section>
+
+  <section id="cadastro" class="section cadastro">
+    <h2 class="title cadastro-title">Cadastro</h2>
+    <form class="formulario">
+      <label>Nome:</label>
+      <input type="text" placeholder="Digite seu nome" required />
+
+      <label>Idade:</label>
+      <input type="number" min="1" max="120" placeholder="Digite sua idade" required />
+
+      <label>E-mail:</label>
+      <input type="email" placeholder="Digite seu e-mail" required />
+
+      <label>Telefone:</label>
+      <input type="tel" placeholder="Digite seu telefone" required />
+
+      <label>Senha:</label>
+      <input type="password" placeholder="Digite sua senha" required />
+
+      <button type="submit" class="confirmar">Confirmar</button>
+    </form>
+  </section>
 </body>
 </html>
