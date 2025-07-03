@@ -1,0 +1,142 @@
+/* Reset e base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Fundo com imagem */
+  .box2 {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('4.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  /* Área do formulário */
+  .form-wrapper {
+    background-color: rgba(0, 0, 255, 0.5);
+    border-radius: 15px;
+    padding: 40px 30px;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Formulário */
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+  
+  /* Inputs */
+  .formulario input {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+  }
+  
+  /* Botão de confirmar */
+  .confirmar {
+    background-color: #00c853;
+    color: white;
+    font-size: 18px;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+  }
+  .confirmar:hover {
+    background-color: #00b74a;
+  }
+  
+  /* Botão estilo link */
+  .confirmar-link {
+    background-color: #00c853;
+    color: white;
+    font-size: 18px;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  .confirmar-link:hover {
+    background-color: #00b74a;
+  }
+  
+  /* Título */
+  .title2 {
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    background-color: rgb(7, 238, 255);
+    color: black;
+  }
+  
+  /* Labels */
+  .letter2 {
+    color: black;
+    font-size: 18px;
+  }
+  
+  /* Imagem */
+  .img {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .form-wrapper {
+      padding: 25px 20px;
+    }
+    .confirmar,
+    .confirmar-link {
+      font-size: 16px;
+    }
+    .title2 {
+      font-size: 20px;
+    }
+    .letter2 {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .form-wrapper {
+      padding: 20px 15px;
+    }
+    .title2 {
+      font-size: 18px;
+    }
+    .confirmar,
+    .confirmar-link {
+      font-size: 15px;
+    }
+    .formulario input {
+      font-size: 15px;
+    }
+  }
+  

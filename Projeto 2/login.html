@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+  <section id="login" class="section box2">
+    <div class="form-wrapper">
+      <h2 class="title2">Login</h2>
+      <div class="img">
+        <img src="SORRISO.png" alt="Ícone de Login" width="80" height="80" />
+      </div>
+
+      <form class="formulario" onsubmit="return redirecionarParaServico()">
+        <label class="letter2">E-mail:</label>
+        <input type="email" id="email" placeholder="Digite seu e-mail" required />
+
+        <label class="letter2">Senha:</label>
+        <input type="password" id="senha" placeholder="Digite sua senha" required />
+
+        <button type="submit" class="confirmar">Confirmar</button>
+        <a href="cadastro.html" class="confirmar-link">Cadastrar-se</a>
+      </form>
+    </div>
+  </section>
+
+  <script>
+    function redirecionarParaServico() {
+      // Aqui você pode validar o e-mail/senha, se quiser
+      // Exemplo: validar com localStorage ou apenas seguir com o redirecionamento
+
+      alert("Login realizado com sucesso!");
+      window.location.href = "servico.html";
+      return false; // impede envio padrão do formulário
+    }
+  </script>
+</body>
+</html>
