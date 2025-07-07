@@ -12,12 +12,13 @@ body {
 
 .navbar {
   background-color: #14dbd1;
-  padding: 15px 30px;
+  padding: 25px 500px;
   color: white;
   position: sticky;
   top: 0;
   z-index: 1000;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 40px;
 }
 
 .nav-content {
@@ -30,6 +31,7 @@ body {
 .logo {
   height: 50px;
   width: auto;
+
 }
 
 .menu a button {
@@ -44,4 +46,21 @@ body {
 
 .menu a button:hover {
   background-color: #008ecc;
+}
+
+.box {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('3.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.notopo{
+  margin-top: -700px;
 }
